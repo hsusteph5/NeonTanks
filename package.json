@@ -1,0 +1,28 @@
+{
+  "name": "NeonTanks",
+  "version": "1.0.0",
+  "description": "## Background and Overview",
+  "main": "lib/neontanks.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch lib/neontanks.js -o lib/bundle.js --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsusteph5/NeonTanks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hsusteph5/NeonTanks/issues"
+  },
+  "homepage": "https://github.com/hsusteph5/NeonTanks#readme",
+  "devDependencies": {
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
