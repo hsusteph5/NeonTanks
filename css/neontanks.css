@@ -4,7 +4,9 @@
 
 body {
    font-family: 'Fredoka One', cursive;
-    display: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -37,7 +39,8 @@ body {
 }
 
 #game-canvas {
-    margin: auto;
+    border-radius: 5px;
+    /* box-shadow: 0 0 20px white;  */
 }
 
 
