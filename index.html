@@ -2,10 +2,19 @@
     <head> 
         <title> Neon Tanks </title>
         <link rel="stylesheet" type="text/css" href="css/neontanks.css">
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
     </head>
 
     <body>
-        <p>Try to break the targets in the least moves!</p> 
+        <div id="instructions">
+            <h1>Neon Tanks </h1>
+            <p class="start-text">Try to break the targets in the least moves!</p> 
+            <p class="start-text">Use "W" and "D" key to move your tank</i></p> 
+            <p class="start-text">Use your mouse to aim</i></p> 
+            <p class="start-text">Space bar to shoot</p> 
+            <button id="start-button">Start!</button>
+        </div>
+
         <canvas id="game-canvas"></canvas>
         <script type="application/javascript" src="vendor/keymaster.js"></script>
         <script type="application/javascript" src="lib/bundle.js"></script>

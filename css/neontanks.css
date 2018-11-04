@@ -1,15 +1,61 @@
 * {
-    background:	#101010;
-    /* width: 100%;
-    height: 100%; */
+   background:#202020;
 }
 
 body {
-    display: flex; 
-    justify-content: center;
-    align-content: center;
+   font-family: 'Fredoka One', cursive;
+    display: relative;
 }
 
-p {
+
+#instructions {
+    position: absolute;
+    border: 3px solid #00FFFF;
+    border-radius: 5px;
+    width: 300px;
+    right: 40%;
+    top: 20%;
+    padding: 20px;
+    box-shadow: 0 0 10px #00FFFF; 
+    
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+}
+
+#instructions h1 {
+    margin: 10px;
+    color: #00FFFF;
+    background: none;
+}
+
+#instructions p {
+    font-weight: 200;
+    margin: 10px;
     color: white;
+}
+
+#game-canvas {
+    margin: auto;
+}
+
+
+/* startbutton styling */
+
+#start-button {
+    color: white;
+    font-size: 20px; 
+    font-weight: 700;
+    border-radius: 5px; 
+    border: 2px solid  #00FFFF;
+    width: 200px; 
+    height: 100px; 
+    box-shadow: 0 0 10px #00FFFF; 
+}
+
+
+#start-button:hover {
+    background: #00FFFF;
+    color: #202020;
 }
