@@ -10,10 +10,11 @@ NeonTanks is a projectile based game, inspired by GunBound and ShellShock Live. 
 * [ ] Projectiles will leave the barrel of the gun and fly in an arc
 * [ ] Projectiles will hit targets
 * [ ] Score will be displayed at the end of the level
-* [ ] Collisions will be circle spirals and and death animation will also be in place
+* [ ] Collisions will be fireworks and and death animation will also be in place
 * [ ] Background music, tank movement music, collision music, and explosion music
 
 ### Bonus 
+* [ ] Users can play through 4 levels of Neon Tanks
 * [ ] Users can choose their own tanks that shoot different geometric projectiles
 
 ![StartUp Page](images/startuppageneon.png)
