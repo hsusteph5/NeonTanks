@@ -62,3 +62,7 @@ body {
     background: #00FFFF;
     color: #202020;
 }
+
+#game-over{
+    display: none;
+}
