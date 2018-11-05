@@ -17,6 +17,42 @@ NeonTanks is a projectile based game, inspired by GunBound and ShellShock Live. 
 * [ ] Users can play through 4 levels of Neon Tanks
 * [ ] Users can choose their own tanks that shoot different geometric projectiles
 
+
+## Code Snippets
+### Util file 
+```
+    angle(initialPos, mousePos){
+        const hypotenuse = Util.distance(initialPos, mousePos);
+        const xDist = (mousePos[0] - initialPos[0]); 
+        const resultAngle = Math.acos(xDist / hypotenuse) || 1.57;
+        return resultAngle;
+    }, 
+    //want to return a pos from distance to be a set value like 20px
+    gunEndPos(initialPos, mousePos){
+        //gets the angle from the initalPos and the mousePos
+        angle = Util.angle(initialPos, mousePos);
+
+
+        //rendering the new pos of the endpoint of the gun based on the angles
+        let pos = [];
+        //don't want people to shoot from the direct right or direct left 
+        //limiters on the angle dependent on the mouse 
+        if (angle < 0.54) {
+            angle = 0.54
+        }
+        if (angle > 2.6 ) {
+            angle = 2.6
+        }
+
+        //20 will the length of the gun
+        //hypotenuse * Math.cos(angle) 
+        pos.push(20 * Math.cos(angle));
+        pos.push(20 * Math.sin(angle));
+
+        return [pos[0] + initialPos[0],  initialPos[1] - pos[1]]; 
+    }
+```
+
 ![StartUp Page](images/startuppageneon.png)
 ![Preview Page](images/neontankspreview.png)
 
